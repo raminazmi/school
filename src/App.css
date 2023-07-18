@@ -1,0 +1,27 @@
+:root {
+  --DarkTransparent: rgba(0, 0, 0, 0.5) ;
+  --LightTransparent: rgba(255, 255, 255, 0.5);
+  --DarkBlur: blur(5px);
+  --textDark: #ffffff;
+  --textLight: #2d0404;
+  --LightBG: #f4f7fa;
+  --DarkBG: #094b91;
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.carousel {
+  animation: slideIn 0.5s ease-in-out;
+}
+::selection {
+  background-color: #000000; 
+  color: #ffffff; 
+}
